@@ -43,3 +43,30 @@ It returns the letter “o”.
  An escape sequence is used to escape characters e.g \n, \t, \\, \a, \f, \r, \t etc..
  4+1
 print("John Smith"[1:-1]). It capitalizes the first letter of each word.
+
+
+
+Data Science WEEK 3
+
+They are both division operators, however “/” division gives a floating result while the “//” gives the integer part of the floating result.
+
+1000. It means 10 raised to the power of 3.
+
+3.
+
+We can round using the round() function. E.g round(15.3456) or round(15.3456,2).
+
+1.0.  It prints out 1 with a decimal 1.0.
+
+It evaluates to true when age =>18 or age>65, when age <18 or age <65 and when both 18<=age<65.
+
+Parameter is a variable in the declaration of a function. Argument is the actual value of this variable that gets passed to function.Parameters are placeholders for arguments e.g def sum(number) return number + number. sum(3) is the argument while 3 is the parameter.
+
+None.
+
+Keyword arguments are also known as **kwargs is used to pass a keyworded variable-length argument list. A keyword argument is where you provide a name to the variable as you pass it to the function. It can be thought of as a dictionary that maps a key to its values.
+
+Parameters in functions are made optional by making it a default value
+ 
+For unpacking the list types in a container
+
