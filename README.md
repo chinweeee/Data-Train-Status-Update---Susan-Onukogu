@@ -46,6 +46,7 @@ print("John Smith"[1:-1]). It capitalizes the first letter of each word.
 
 
 
+
 Data Science WEEK 3
 
 They are both division operators, however “/” division gives a floating result while the “//” gives the integer part of the floating result.
@@ -70,3 +71,52 @@ Parameters in functions are made optional by making it a default value
  
 For unpacking the list types in a container
 
+
+DATA SCIENCE WEEK 3
+
+1. Write a function that returns the maximum of two numbers
+CODE:
+def max_num(a,b):
+     if a > b:
+          print("a is greater than b")
+     else:
+        print("b is greater than a")
+max_num(2,3)
+
+2. Write a function for checking the speed of drivers. This function should have one parameter: speed. 
+If speed is less than 70, it should print “Ok”.
+Otherwise, for every 5km above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points. For example, if the speed is 80, it should print: “Points: 2”.
+If the driver gets more than 12 points, the function should print: “License suspended”
+*CODE:*
+def driver_speed(speed):
+    
+    if speed < 70:
+        print("Ok!")
+   
+    else:
+        demerit = (speed-70)/5
+        if demerit > 12:
+            print("License suspended")
+        else:
+            print("Points: ",round(demerit))
+           
+driver_speed(80)
+
+3. Write a function called showNumbers that takes a parameter called limit. It should print all the numbers between 0 and limit with a label to identify the even and odd numbers. For example, if the limit is 3, it should print:0 EVEN,1 ODD,2 EVEN,3 ODD
+*CODE:*
+def showNumbers(limit):
+  for limit in range (0,limit+1):
+    if limit % 2 == 0:
+      print (limit,"is an even number")
+    else:
+      print(limit, "is an odd number")
+showNumbers(13)
+
+#4 Write a function that returns the sum of multiples of 3 and 5 between 0 and limit (parameter). For example, if limit is 20, it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
+
+*CODE:*
+def sum_mult(limit):
+  [limit for limit in range(0,limit+1) if limit % 3 == 0 or limit % 5 == 0]
+  print(sum([limit for limit in range(0,limit+1) if limit % 3 == 0 or limit % 5 == 0]))
+
+sum_mult(20)
